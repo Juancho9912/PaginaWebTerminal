@@ -1,0 +1,18 @@
+<html>
+    <link rel="stylesheet" href="/resources/css/tailwind.css">
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+
+        <p class="text-2xl m-4 text-center font-bold">Destinos</p>
+
+        <label for="destinos">Destinos:</label>
+        <input class="inputs" type="text" id="destino" name="destino" placeholder="Ciudad destino">
+
+        <p class="text-red-500 hidden" id="error_destino">Solo caracteres entre letras y espacios</p>
+
+        <div class="flex gap-16 justify-center pt-5">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+
+    </form>
+</html>

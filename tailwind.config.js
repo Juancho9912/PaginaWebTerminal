@@ -51,9 +51,15 @@ module.exports = {
           light: 'var(--danger-light)',
           DEFAULT: 'var(--danger-default)',
           dark: 'var(--danger-dark)'
+        },
+        hover:{
+          DEFAULT: '#C97D39'
         }
         
-      }
+      },
+      backgroundImage: theme => ({
+        'background': 'url(/resources/assets/airport-1543008_1920.jpg)'
+      })
     }
   },
   variants: {

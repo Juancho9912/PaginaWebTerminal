@@ -1,0 +1,42 @@
+<html>
+    <link rel="stylesheet" href="/resources/css/tailwind.css">
+
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+
+        <p class="text-2xl m-4 text-center font-bold">Destinos Ofrecidos por Empresas</p>
+
+        <label for="ciudad">Terminal o ciudad de Destino :</label>
+        <select id="ciudad" class="inputs">
+        </select>
+
+        <label for="empresa">Nombre de la empresa :</label>
+        <select id="empresa" class="inputs">
+        </select>
+
+        <label for="hora">Fecha y hora :</label>
+        <input type="text" class="inputs" id="fechahora" placeholder="Fecha y hora " name="datetime">
+
+        <p class="text-red-500 hidden" id="error_datetime">Ingrese fecha y hora en formado dd/mm/aaaa hh:mm Ej: 12/05/1998 12:59 p.m  </p>
+
+        <label for="tipo-servicio">Tipo de servicio :</label>
+        <select id="tipo-servicio" class="inputs">
+          <option value="especial">Especial</option>
+          <option value="basico">Basico</option>
+          <option value="ejecutivo">Ejecutivo</option>
+        </select>
+
+        <label for="valor">valor del destino :</label>
+        <input id="valor" class="inputs" type="text" placeholder="Valor" name="valor">
+
+        <p class="text-red-500 hidden" id="error_valor">Ingrese un valor correcto </p>
+
+        <label for="directo">marque si directo :</label>
+        <input id="directo" type="checkbox"> <br>
+
+        <div class="flex gap-16 justify-center pt-5">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+
+      </form>
+</html>

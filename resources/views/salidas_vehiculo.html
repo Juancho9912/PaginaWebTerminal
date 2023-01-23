@@ -1,0 +1,32 @@
+<html>
+    <link rel="stylesheet" href="/resources/css/tailwind.css">
+    
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+
+        <p class="text-2xl m-4 text-center font-bold">Programacion de salida de vehiculos</p>
+
+        <label for="fechahora">Fecha y hora: </label>
+        <input type="text" class="inputs" id="fechahora" placeholder="Fecha y hora " name="datetime">
+
+        <p class="text-red-500 hidden" id="error_datetime">Ingrese fecha y hora en formato dd/mm/aaaa hh:mm Ej: 12/05/1998 12:59 p.m  </p>
+
+        <label for="vehiculo">Vehiculo: </label>
+        <select class="inputs" id="vehiculo">
+            
+        </select>
+
+        <label for="conductor">Conductor asignado: </label>
+        <select class="inputs" id="conductor">
+        </select>
+
+        <label for="empresa">Empresa para la cual labora: </label>
+        <select class="inputs" id="empresa">
+        </select>
+
+        <div class="flex gap-16 justify-center pt-5">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+        
+    </form>
+</html>

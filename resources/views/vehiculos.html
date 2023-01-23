@@ -1,0 +1,37 @@
+<html>
+    
+    <link rel="stylesheet" href="/resources/css/tailwind.css">
+    <script defer src="/resources/js/index.js"></script>
+    
+
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+        <p class="text-2xl m-4 text-center font-bold">Vehiculos</p>
+
+        <label for="placa">Placa del vehiculo:</label>
+        <input type="text" id="placa" class="inputs" placeholder="placa vehiculo" name="vehiculo">
+
+        <p class="text-red-500 hidden" id="error_vehiculo">Minimo 3, Maximo 8 (Solo letras y numeros)</p>
+
+        <label for="identificador">Identificador interno:</label>
+        <input type="text" id="identificador" class="inputs" placeholder="id interno" name="interno">
+
+        <p class="text-red-500 hidden" id="error_interno">Minimo 3, Maximo 8 (Solo letras y numeros)</p>
+
+        <label for="empresa">Empresa que pertenece el vehiculo:</label>
+        <select id="empresa" class="inputs">
+
+        </select>
+        <label for="vehiculo">Tipo de distribucion:</label>
+        <select id="vehiculo" class="inputs"></select>
+
+        <div class="shadow-xl mx-auto justify-center items-center w-96 flex flex-wrap gap-4" id="sillas">
+            
+            
+        </div>
+
+        <div class="mx-auto mt-4">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+    </form>
+</html>

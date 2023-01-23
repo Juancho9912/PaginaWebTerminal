@@ -7,17 +7,104 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tailwind Tutorial</title>
     <link rel="stylesheet" href="./resources/css/tailwind.css">
+    <script type="module" defer src="./resources/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/4ffcd44680.js" crossorigin="anonymous"></script>
+   
+    
+    
 </head>
 
-
-
 <body>
-    <p class="text-4xl text-orange-300 bg-primary my-5">Hola mundo</p>  
+
+    <!-- <form action="" class="flex flex-col w-full">
+        <label class="font-bold" for="user">Seleccione un usuario:</label>
+        <select name="users"  class="border border-2 border-black rounded-lg text-lg p-2 m-4" id="user"></select>
+        <label class="font-bold" for="contraseña">Digite la contraseña: </label>
+        <input type="text" class="border border-2  border-black rounded-lg text-lg p-2 outline-none m-4" placeholder="Contraseña" name="" id="contraseña">
+        <p class="hidden font-bold text-red-700" id="error">Contraseña incorrecta</p>
+    </form> -->
+    
+    <header class="max-w-screen h-screen bg-background bg-cover bg-center text-white">
+        <div class="w-full h-full bg-orange-800 bg-opacity-20">
+            <div id="sticky" class="flex justify-between items-center h-16 md:justify-around "> 
+            
+                <div id="img" class="w-1/12 md:w-20">
+                    <img src="./resources/assets/icono.png" alt="logo" class="w-full"> 
+                </div>
+                
+                <div id="toggle" class="p-2 text-xl cursor-pointer hover:text-hover hover:transform hover:scale-150 md:hidden"><i class="fas fa-bars"></i></div>
+    
+                <ul id="menu" class="absolute w-full left-0 top-16 hidden md:static md:w-6/12 md:flex lg:w-4/12"> 
+                    <li class="boton">Inicio</li>
+                    <li class="boton">Registrarse</li>
+                    <li class="boton">Ingresar</li>
+                </ul>
+    
+            </div>
+            <div class="flex flex-col items-center justify-center h-5/6 md:w-8/12 mx-auto lg:w-6/12">
+                <h2 class="text-white text-3xl font-bold pb-4">Acerca de</h2>
+                <p class="text-white p-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi veniam repudiandae doloremque. Dolore, soluta doloribus molestias officiis dolor distinctio?</p>
+                <button id="btnabrir" class="bg-black  text-white text-2xl rounded-lg font-bold py-1 px-4 bg-opacity-50 hover:bg-white hover:text-black hover:bg-opacity-30">MAS INFORMACION</button>
+            </div>
+        </div>    
+        
+    </header> 
+
+    <main>
+        <section class="flex flex-col md:flex-row">
+            <nav class="p-4 md:w-4/12 lg:w-3/12">
+                <ul id="menu2"class="cursor-pointer bg-black rounded-lg bg-opacity-30 px-6 py-1 font-bold ">
+                    <li class="lista">Conductor</li>
+                    <li class="lista">Empresa</li>
+                    <li class="lista">Destino</li>
+                    <li class="lista">Destinos ofrecidos por empresas</li>
+                    <li class="lista">Vehiculo</li>
+                    <li class="lista">Salidas</li>
+                    <li class="lista">Comprar</li>
+                    
+                </ul>
+            </nav>
+            <div class="mx-auto md:p-4 lg:w-2/5" id="content">
+                <div class="w-full text-center mx-auto">
+                    <h2>Bienvenido</h2>
+
+                    
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+    <section>
+        
+
+
+        <div id="popup" class="hidden fixed inset-0 flex bg-yellow-500 items-center justify-center" style="background-color: rgba(0,0,0,0.3);">
+            <div class="max-w-lg p-8 sm:pb-4 bg-white rounded shadow-lg text-center sm:text-left">
+
+                <h3 class="text-xl sm:text-2xl font-semibold mb-6 flex flex-col sm:flex-row items-center">
+                    <div class="bg-green-200 p-2 rounded-full flex items-center mb-4 sm:mb-0 sm:mr-2">
+                        <svg class="text-green-800 inline-block w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                        </svg>
+                    </div>
+                    <span id="title"></span>
+                </h3>
+
+                <section id="content"></section>
+
+                <div class="mt-8 pt-8 sm:pt-4 border-t -mx-8 px-8 flex flex-col sm:flex-row justify-end leading-relaxed">
+                    <button id="close" class="px-8 py-3 sm:py-2 rounded border border-gray-400 hover:bg-gray-200 transition duration-300">Cerrar</button>
+                    <button id="accept" class="font-bold mt-4 sm:mt-0 sm:ml-4 px-8 py-3 sm:py-2 rounded bg-purple-700 text-gray-100 hover:bg-purple-900 transition duration-300 text-center">$2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
-<body>
-    <button class="bg-primary hover:bg-primary-dark text-gray-light m-3 py-2 px-4 rounded">Botón personalizado 1</button>
-</body>
+
 
 
 

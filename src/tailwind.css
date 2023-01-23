@@ -8,7 +8,7 @@
     --primary-light: #abbdcf;
   
     --secondary-dark: #627273;
-    --secondary-default: #95a5a6;
+    --secondary-default: #206B80;
     --secondary-light: #e1f1f2;
   
     --success-dark: #008969;
@@ -30,6 +30,8 @@
     --gray-dark: #01070d;
     --gray-default: #343a40;
     --gray-light: #b3b9bf;
+
+
   }
   
   @layer base {
@@ -53,3 +55,24 @@
 .btn-blue {
     @apply bg-blue-500 hover:bg-blue-700 text-white m-3 py-2 px-4 rounded;
   }
+.boton{
+  @apply text-xl hover:bg-white hover:text-black w-full text-center rounded-lg hover:bg-opacity-50 p-2 my-2 hover:font-bold cursor-pointer;
+}
+.lista{
+  @apply text-center mx-4 my-2 hover:text-white hover:bg-opacity-50 border-b-2 border-black p-2 hover:bg-black rounded-lg;
+}
+.sticky{
+  @apply sticky top-0 bg-white bg-opacity-80 p-0 items-center text-black;
+}
+.menu{
+  @apply bg-white bg-opacity-80 md:bg-transparent;
+}
+.inputs{
+  @apply p-2 shadow-md mb-3 border-2 rounded-md;
+}
+.correcto{
+  @apply border-green-600
+}
+.incorrecto{
+  @apply border-red-600
+}

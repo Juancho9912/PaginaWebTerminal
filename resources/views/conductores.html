@@ -1,0 +1,29 @@
+<html>
+    <link rel="stylesheet" href="./resources/css/tailwind.css">
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+        <p class="text-2xl m-4 text-center font-bold">Conductores</p>
+
+        <label name="identificador" for="id_conductor" >Identificacion del conductor: </label>
+        <input type="text" class="inputs" id="id_conductor" name="identificacion" placeholder="Identificacion">
+
+        <p class="text-red-500 hidden" id="error_identificacion">Minimo 4, Maximo 16 (Solo letras y numeros)</p>
+
+        <label for="nombre">Nombre del conductor: </label>
+        <input type="text" class="inputs" id="nombre" name="nombre" placeholder="Nombre">
+
+        <p class="text-red-500 hidden" id="error_nombre">Maximo 40 caracteres (Solo letras y espacion)</p>
+
+        <label for="telefono">Telefono: </label>
+        <input type="tel" class="inputs" id="telefono" name="telefono" placeholder="Número de contacto">
+
+        <p class="text-red-500 hidden" id="error_telefono">Minimo 7, Maximo 14 (Solo numeros)</p>
+
+        <label for="empresa">Empresa para la cual labora:</label>
+        <select class="inputs" id="empresa"></select>
+
+        <div class="flex gap-16 justify-center pt-5">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+    </form>
+</html>

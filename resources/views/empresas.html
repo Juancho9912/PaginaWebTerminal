@@ -1,0 +1,32 @@
+<html>
+    <link rel="stylesheet" href="/resources/css/tailwind.css">
+    <form id="form" class="formulario w-full flex flex-col shadow-md p-4 rounded-md bg-blue-600 bg-opacity-30 ">
+
+        <p class="text-2xl m-4 text-center font-bold">Empresas transportadoras</p>
+
+        <label for="nit_empresa">Nit de la empresa: </label>
+        <input class="inputs" type="text" id="nit_empresa" placeholder="Nit empresa" name="identificacion">
+
+        <p class="text-red-500 hidden" id="error_identificacion">Minimo 4, Maximo 16 (Solo letras y numeros)</p>
+
+        <label for="nombre">Nombre de la empresa: </label>
+        <input class="inputs" type="text" id="nombre" placeholder="Nombre empresa" name="nombre">
+
+        <p class="text-red-500 hidden" id="error_nombre">Maximo 40 caracteres (Solo letras y espacion)</p>
+
+        <label for="telefono">Telefono: </label>
+        <input class="inputs" id="telefono" type="tel" value="" placeholder="Número de celular" pattern="\d{10}" name="telefono"/>
+
+        <p class="text-red-500 hidden" id="error_telefono">Minimo 7, Maximo 14 (Solo numeros)</p>
+
+        <label for="correo">Correo: </label>
+        <input class="inputs" type="text" id="correo" placeholder="E-mail" name="correo">
+
+        <p class="text-red-500 hidden" id="error_correo">Ingrese un correo valido</p>
+        
+        <div class="flex gap-16 justify-center pt-5">
+            <button type="submit" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Aceptar</button>
+            <button type="reset" class="border-transparent rounded-md text-white bg-blue-700 py-1 px-8 hover:bg-blue-900">Cancelar</button>
+        </div>
+      </form>
+</html>
